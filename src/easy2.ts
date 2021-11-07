@@ -37,4 +37,4 @@ type Order =
     fullfillmentDate: Date;
 };
 
-export const getOrderState = (order: Order): string => order.state; //тип FIXME заменён на string
+export const getOrderState = (order: Order): Order['state'] => order.state; //тип FIXME заменён на Order['state']
